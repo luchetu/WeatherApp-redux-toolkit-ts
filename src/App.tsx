@@ -29,7 +29,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     getCoordinates();
-  }, [getCoordinates]);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
