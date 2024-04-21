@@ -31,6 +31,12 @@ const App: React.FC = () => {
     getCoordinates();
   }, []);
 
+
+  useEffect(() => {
+    getCoordinates();
+  }, [currentLanguage, dispatch]);
+
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     getCoordinates();
